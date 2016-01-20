@@ -1,3 +1,4 @@
+#include "stdafx.h"
 #include <string>
 #include <vector>
 
@@ -7,8 +8,8 @@ class TouchScreen {
 	int widthScreen;
 	int heightScreen;
 public:
-	virtual TouchScreen* create() = 0;
-	virtual TouchScreen* create(int width, int height) = 0;
 	virtual string operator() (vector<int>& data) = 0;
 	virtual ~TouchScreen() {};
 };
+
+TouchScreen* create(int width, int height);

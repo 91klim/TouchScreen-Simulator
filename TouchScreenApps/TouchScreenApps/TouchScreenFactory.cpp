@@ -1,18 +1,9 @@
+#include "stdafx.h"
 #include "TouchScreenFactory.h"
-
-TouchScreen* TouchScreenFactory::create()
-{
-
-}
-
-TouchScreen* TouchScreenFactory::create(int width, int height)
-{
-
-}
 
 string TouchScreenFactory::operator() (vector<int>& data)
 {
-
+	return "";
 }
 
 TouchScreenFactory::TouchScreenFactory()
@@ -23,4 +14,9 @@ TouchScreenFactory::TouchScreenFactory()
 TouchScreenFactory::~TouchScreenFactory()
 {
 
+}
+
+TouchScreen* create(int width, int height)
+{
+	return nullptr;
 }

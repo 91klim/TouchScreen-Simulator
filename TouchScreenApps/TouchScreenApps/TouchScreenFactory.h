@@ -1,11 +1,9 @@
+#include "stdafx.h"
 #include "TouchScreen.h"
 
-class TouchScreenFactory
-{
-	
+class TouchScreenFactory : public TouchScreen
+{	
 public:
-	TouchScreen* create();
-	TouchScreen* create(int width, int height);
 	string operator() (vector<int>& data);
 	TouchScreenFactory();
 	~TouchScreenFactory();
