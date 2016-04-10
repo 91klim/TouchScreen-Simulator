@@ -1,0 +1,8 @@
+# Exclude directories and files from VS2015
+*/Debug/*
+*/*/Debug/*
+*/ipch/*
+*/.vs/*
+
+*.sdf
+*.vcxproj.user
